@@ -22,7 +22,7 @@ public class CouleurText extends Animations {
     }
     
     @Override
-    public void effectuer() {
+    public void effectuer(Bandeau myBandeau) {
         myBandeau.setForeground(couleur);
     }
     

@@ -9,16 +9,10 @@ package bandeau;
  *
  * @author aabdo
  */
-public class Message extends Animations {
-    private String mess;
-    
-    public Message(String message){
-        mess=message;
-    }
-    
+public class RainbowText extends Animations{
     @Override
-    public void effectuer(Bandeau myBandeau) {
-        myBandeau.setMessage(mess);
+    public void effectuer(Bandeau Mybandeau) {
+        CouleurTexte = new Couleur
     }
     
 }

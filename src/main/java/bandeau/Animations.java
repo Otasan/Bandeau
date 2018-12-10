@@ -10,8 +10,6 @@ package bandeau;
  * @author aabdo
  */
 public abstract class Animations {
-    protected Bandeau myBandeau = new Bandeau();
-    
-    abstract public void effectuer();
+    abstract public void effectuer(Bandeau myBandeau);
     
 }
