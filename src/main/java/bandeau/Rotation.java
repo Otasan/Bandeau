@@ -11,7 +11,7 @@ package bandeau;
  */
 public class Rotation extends Animations {
     
-    private Float angl;
+    private double angl;
     
     public Rotation(Float angle){
         angl=angle;
@@ -19,9 +19,9 @@ public class Rotation extends Animations {
     
     @Override
     public void effectuer(Bandeau myBandeau) {
-        for (int i = 0; i <= 100; i++) {
-			myBandeau.setRotation(2*Math.PI*i / 100);
+        double init = myBandeau.getRotation();
+        for (double i = 0; i <= 100; i++) {
+            myBandeau.setRotation(init+(angl / 100));
+        }
     }
-    
-}
 }

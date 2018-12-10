@@ -9,13 +9,13 @@ package bandeau;
  *
  * @author aabdo
  */
-public class RainbowText extends Animations{
+public class Disparition extends Animations{
+
     @Override
     public void effectuer(Bandeau myBandeau) {
-        for(int b = 0;b<=255;b++){
-            CouleurText c = new CouleurText(255-b,b,0);
-            c.effectuer(myBandeau);
-            myBandeau.sleep(1);
+        myBandeau.setMessage("Wooosh");
+        for(int s = myBandeau.getFont().getSize();s>0;s--){
+            Rotation r = new Rotation()
         }
     }
     
