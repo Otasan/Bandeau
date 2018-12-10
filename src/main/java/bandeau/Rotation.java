@@ -18,7 +18,7 @@ public class Rotation extends Animations {
     }
     
     @Override
-    public void effectuer() {
+    public void effectuer(Bandeau myBandeau) {
         for (int i = 0; i <= 100; i++) {
 			myBandeau.setRotation(2*Math.PI*i / 100);
     }

@@ -5,20 +5,25 @@
  */
 package bandeau;
 
+import java.awt.Color;
+
 /**
  *
  * @author aabdo
  */
-public class Message extends Animations {
-    private String mess;
-    
-    public Message(String message){
-        mess=message;
+public class CouleurText extends Animations {
+    private Color couleur;
+
+    public CouleurText(int r, int g, int b){
+        couleur=new Color(r,g,b);
+    }
+    public CouleurText(Color couleur){
+        this.couleur=couleur;
     }
     
     @Override
     public void effectuer(Bandeau myBandeau) {
-        myBandeau.setMessage(mess);
+        myBandeau.setForeground(couleur);
     }
     
 }
