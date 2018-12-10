@@ -9,9 +9,10 @@ package bandeau;
  *
  * @author aabdo
  */
-public abstract class Animations {
-    protected Bandeau myBandeau = new Bandeau();
-    
-    abstract public void effectuer();
+public class Rainbow extends Animations{
+    @Override
+    public void effectuer() {
+        CouleurTexte = new Couleur
+    }
     
 }
