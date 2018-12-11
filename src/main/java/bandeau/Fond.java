@@ -10,10 +10,10 @@ import java.awt.Color;
  * @author greziz
  */
 public class Fond extends Animations{
- private Color couleurf;
- public Fond (int r, int g, int b){
-     couleurf= new Color(r,g,b);
- } 
+    private Color couleurf;
+    public Fond (int r, int g, int b){
+        couleurf= new Color(r,g,b);
+    } 
     public Fond(Color couleurf){
         this.couleurf=couleurf;
     }
