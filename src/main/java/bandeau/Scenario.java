@@ -5,7 +5,9 @@
  */
 package bandeau;
 
+import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.Random;
 
 /**
  *
@@ -32,6 +34,18 @@ public class Scenario {
         for(Animations a:myEffets){
             a.effectuer(myBandeau);
             myBandeau.sleep(100);
+        }
+    }
+    
+    public void playShuffle(){
+        HashSet<Integer> fait = new HashSet();
+        Random rand = new Random();
+        while(fait.size()<myEffets.size()){
+            int r = rand.nextInt(myEffets.size());
+            if(!fait.contains(r)){
+                fait.add(r);
+                myEffets.get(r).effectuer(myBandeau);
+            }
         }
     }
 }
