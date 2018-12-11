@@ -11,6 +11,7 @@ public class ExempleDUtilisation {
         Scenario s = new Scenario(monBandeau);
         s.addAnimation(new Message("AaAaAaAaAa"));
         s.addAnimation(new Rotation(Math.PI));
+        s.addAnimation(new Fondu(new Color(255, 0, 0)));
         s.addAnimation(new RainbowBack());
         s.addAnimation(new Disparition());
         s.play();
