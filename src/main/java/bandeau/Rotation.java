@@ -22,7 +22,7 @@ public class Rotation extends Animations {
         double init = myBandeau.getRotation();
         for (double i = 0; i <= 100; i++) {
             myBandeau.setRotation(init+(angl / 100));
-            myBandeau.sleep(1000);
+            myBandeau.sleep(10);
         }
     }
 }
