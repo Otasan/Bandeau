@@ -21,7 +21,7 @@ public class Rotation extends Animations {
     public void effectuer(Bandeau myBandeau) {
         double init = myBandeau.getRotation();
         for (double i = 0; i <= 100; i++) {
-            myBandeau.setRotation(init+(angl / 100));
+            myBandeau.setRotation(init+(angl*i / 100));
         }
     }
 }
