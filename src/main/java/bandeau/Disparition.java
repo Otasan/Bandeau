@@ -19,7 +19,7 @@ public class Disparition extends Animations{
         int taille = myBandeau.getFont().getSize();
         Rotation r = new Rotation((Math.PI*4)/taille);
         for(int s = taille;s>0;s--){
-            r.effectuer(myBandeau);
+            r.effectuer(myBandeau, false);
             Police p = new Police(myBandeau.getFont().getFontName(), s);
             p.effectuer(myBandeau);
         }

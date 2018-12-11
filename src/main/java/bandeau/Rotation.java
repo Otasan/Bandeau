@@ -22,6 +22,13 @@ public class Rotation extends Animations {
         double init = myBandeau.getRotation();
         for (double i = 0; i <= 100; i++) {
             myBandeau.setRotation(init+(angl*i / 100));
+            myBandeau.sleep(10);
+        }
+    }
+    public void effectuer(Bandeau myBandeau, boolean f) {
+        double init = myBandeau.getRotation();
+        for (double i = 0; i <= 100; i++) {
+            myBandeau.setRotation(init+(angl*i / 100));
         }
     }
 }

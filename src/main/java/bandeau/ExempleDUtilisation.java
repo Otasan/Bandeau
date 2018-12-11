@@ -4,10 +4,16 @@ import java.awt.Color;
 import java.awt.Font;
 
 public class ExempleDUtilisation {
-    private final Bandeau monBandeau = new Bandeau();
+    private static Bandeau monBandeau = new Bandeau();
     
     public static void main(String[] args) {
-	    new ExempleDUtilisation().exemple();
+	    //new ExempleDUtilisation().exemple();
+        Scenario s = new Scenario(monBandeau);
+        s.addAnimation(new Message("AaAaAaAaAa"));
+        s.addAnimation(new Rotation(Math.PI));
+        s.addAnimation(new RainbowBack());
+        s.addAnimation(new Disparition());
+        s.play();
     }
     
     public void exemple() {

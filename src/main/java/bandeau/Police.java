@@ -16,8 +16,10 @@ public class Police extends Animations{
         poli=police;
         tail=taille;   
     }
-        @Override
+    
+    @Override
     public void effectuer(Bandeau myBandeau) {
         myBandeau.setFont(new Font(poli, Font.PLAIN, tail));
-}
+        myBandeau.sleep(10);
+    }
 }
