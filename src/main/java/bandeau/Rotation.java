@@ -13,7 +13,7 @@ public class Rotation extends Animations {
     
     private double angl;
     
-    public Rotation(Float angle){
+    public Rotation(Double angle){
         angl=angle;
     }
     
