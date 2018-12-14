@@ -12,6 +12,11 @@ import java.awt.Font;
 public class Police extends Animations{
     private String poli;
     private int tail;
+    /**
+     * Change la police d'écriture pour celle précisée
+     * @param police
+     * @param taille 
+     */
     public Police(String police, int taille){
         poli=police;
         tail=taille;   

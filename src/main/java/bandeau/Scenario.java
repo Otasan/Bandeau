@@ -17,10 +17,19 @@ public class Scenario {
     private LinkedList<Animations> myEffets = new LinkedList();
     private Bandeau myBandeau;
     
+    /**
+     * Initialise un scénario pour un bandeau
+     * @param bandeau 
+     */
     public Scenario(Bandeau bandeau){
         myBandeau=bandeau;
     }
     
+    /**
+     * Ajoute une animation (avec ou sans répétitions
+     * @param a
+     * @param rep 
+     */
     public void addAnimation(Animations a, int rep){
         for(int i = 0;i<rep;i++){
             myEffets.add(a);
@@ -30,6 +39,9 @@ public class Scenario {
         myEffets.add(a);
     }
     
+    /**
+     * Joue toutes les animations dans l'ordre
+     */
     public void play(){
         for(Animations a:myEffets){
             a.effectuer(myBandeau);
@@ -37,6 +49,9 @@ public class Scenario {
         }
     }
     
+    /**
+     * Joue toutes les animations dans le désordre
+     */
     public void playShuffle(){
         HashSet<Integer> fait = new HashSet();
         Random rand = new Random();

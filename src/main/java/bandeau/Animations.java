@@ -10,6 +10,10 @@ package bandeau;
  * @author aabdo
  */
 public abstract class Animations {
+    /**
+     * Effectue l'animation sur le bandeau
+     * @param myBandeau 
+     */
     abstract public void effectuer(Bandeau myBandeau);
     
 }

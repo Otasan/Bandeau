@@ -11,9 +11,20 @@ import java.awt.Color;
  */
 public class Fond extends Animations{
     private Color couleurf;
+    
+    /**
+     * Définie la couleur du fond
+     * @param r
+     * @param g
+     * @param b 
+     */
     public Fond (int r, int g, int b){
         couleurf= new Color(r,g,b);
     } 
+    /**
+     * Définie la couleur du fond
+     * @param couleurf 
+     */
     public Fond(Color couleurf){
         this.couleurf=couleurf;
     }

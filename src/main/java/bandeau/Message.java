@@ -11,7 +11,10 @@ package bandeau;
  */
 public class Message extends Animations {
     private String mess;
-    
+    /**
+     * Message à afficher
+     * @param message 
+     */
     public Message(String message){
         mess=message;
     }

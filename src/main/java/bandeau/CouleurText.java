@@ -14,9 +14,19 @@ import java.awt.Color;
 public class CouleurText extends Animations {
     private Color couleur;
 
+    /**
+     * définie la couleur
+     * @param r
+     * @param g
+     * @param b 
+     */
     public CouleurText(int r, int g, int b){
         couleur=new Color(r,g,b);
     }
+    /**
+     * définie la couleur
+     * @param couleur 
+     */
     public CouleurText(Color couleur){
         this.couleur=couleur;
     }
